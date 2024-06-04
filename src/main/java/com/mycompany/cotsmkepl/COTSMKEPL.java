@@ -3,14 +3,37 @@
  */
 
 package com.mycompany.cotsmkepl;
-
+import java.util.Scanner;
 /**
  *
  * @author ariel
  */
 public class COTSMKEPL {
-
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Masukkan nama Anda: ");
+        String name = scanner.nextLine();
+        System.out.println("Selamat datang, " + name + "!");
+             
+        // Meminta pengguna untuk memasukkan dua angka
+        System.out.print("Masukkan angka pertama: ");
+        double num1 = scanner.nextDouble();
+
+        System.out.print("Masukkan angka kedua: ");
+        double num2 = scanner.nextDouble();
+
+        // Melakukan operasi aritmatika
+        double sum = num1 + num2;
+        double difference = num1 - num2;
+        double product = num1 * num2;
+        double quotient = num1 / num2;
+
+        // Menampilkan hasil
+        System.out.println("Hasil penjumlahan: " + sum);
+        System.out.println("Hasil pengurangan: " + difference);
+        System.out.println("Hasil perkalian: " + product);
+        System.out.println("Hasil pembagian: " + quotient);
+
+        scanner.close();
     }
 }
